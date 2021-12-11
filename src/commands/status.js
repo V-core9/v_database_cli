@@ -3,20 +3,16 @@ const fs = require('fs');
 
 //const repo_list = require('../../data/repo_list');
 
-
-const config = {
-  dir: {
-    cfg_dir: process.env.home + '/.v9',
-    cfg_file: process.env.home + '/.v9/config.json',
-    projects: process.env.home + '/.v9/projects',
-  }
-};
+const root_name = 'v_db';
+const root_dirname = '.'+root_name;
+const cfg_dir = process.env.home + '/' + root_dirname;
+const cfg_file= cfg_dir + '/config.json';
 
 configDirCheck = async () => {
 
   var dir_status = false;
   try {
-    fs.readdirSync(config.dir.cfg_dir, 'utf8');
+    fs.readdirSync(cfg_dir, 'utf8');
     dir_status = true;
   } catch (e) {
     //console.log(e);
@@ -31,7 +27,7 @@ configFileCheck = async () => {
 
   var file_status = false;
   try {
-    fs.readFileSync(config.dir.cfg_file, 'utf8');
+    fs.readFileSync(cfg_file, 'utf8');
     file_status = true;
   } catch (e) {
     //console.log(e);
@@ -42,54 +38,13 @@ configFileCheck = async () => {
   return file_status;
 };
 
-repoDirsCheck = async () => {
-
-  var dir_status = false;
-  try {
-    fs.readdirSync(config.dir.projects);
-    dir_status = true;
-  } catch (e) {
-    //console.log(e);
-  }
-
-  console.log(dir_status === true ? '🧱 Found Repo Directory. ✅' : '🧱 Missing Repo Directory. 🔻');
-
-  return dir_status;
-};
-
-repoListCheck = async () => {
-
-  //console.log(repo_list);
-  var none_found = true;
-
-  var projects = null;
-  try {
-    projects = fs.readdirSync(config.dir.projects);
-  } catch (e) {
-    //console.log(e);
-  }
-
-
-  if (projects !== null) {
-    for (var i = 0; i < projects.length; i++) {
-      if (Object.keys(repo_list).indexOf(projects[i]) > -1) {
-        console.log(repo_list[projects[i]]);
-        none_found = false;
-      }
-    }
-  }
-
-  if (none_found === true) console.log('🧱 Missing All Projects. 🔻');
-
-  return projects;
-};
 
 
 class StatusCommand extends Command {
   async run() {
     const { flags } = this.parse(StatusCommand);
     const checklist = flags.checklist || false;
-    this.log(`🩺 v9_cli system check triggered for [ -c >> ${checklist} ]`);
+    console.log(`\n🩺 V_Database_CLI \nSystem Status Check triggered for [ --checklist >> ${checklist === false ? 'ALL' : checklist} ]\n`);
 
 
     var check_array = null;
@@ -106,22 +61,12 @@ class StatusCommand extends Command {
         configFileCheck();
       }
 
-      if (check_array.indexOf('repo_dir') > -1) {
-        repoDirsCheck();
-      }
-
-      if (check_array.indexOf('repo_list') > -1) {
-        repoListCheck();
-      }
-
     }
 
 
     if (checklist === false) {
       await configDirCheck();
       await configFileCheck();
-      await repoDirsCheck();
-      await repoListCheck();
     }
 
 
@@ -131,14 +76,12 @@ class StatusCommand extends Command {
 StatusCommand.description = `Check the status of CLI tool and system.
 ...
 Look for into the config directory and config file.
-Check the status of the repos directory.
-Provide data about repos and their status.
 
 Flags Additional Options:
-  -c, --checklist  >>  [ "cfg_dir", "cfg_file", "repo_dir" ]
+  -c, --checklist  >>  [ "cfg_dir", "cfg_file" ]
 
 Example:
-  v9 cli_status -c='cfg_dir cfg_file repo_dir'
+  v9 cli_status -c='cfg_dir cfg_file '
 `;
 
 StatusCommand.flags = {
