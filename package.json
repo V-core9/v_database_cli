@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "author": " @V-core9",
   "bin": {
-    "v_db ": "./bin/run"
+    "v_db": "./bin/run"
   },
   "bugs": "https://github.com/V-core9/v_database_cli/issues",
   "devDependencies": {
@@ -35,7 +35,7 @@
   "main": "src/index.js",
   "oclif": {
     "commands": "./src/commands",
-    "bin": "v_db ",
+    "bin": "v_db",
     "plugins": [
       "@oclif/plugin-help"
     ]

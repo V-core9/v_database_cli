@@ -1,7 +1,7 @@
 const { Command, flags } = require('@oclif/command');
 const fs = require('fs');
 
-const repo_list = require('../../data/repo_list');
+//const repo_list = require('../../data/repo_list');
 
 
 const config = {
