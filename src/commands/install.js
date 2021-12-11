@@ -8,7 +8,7 @@ class InstallCommand extends Command {
     const name = flags.name || 'world';
     this.log(`hello ${name} from C:\\Users\\v__V_\\V-core9\\v_database_cli\\src\\commands\\install.js`);
 
-    console.log(v_db.install());
+    console.log(await v_db.install());
   }
 }
 
