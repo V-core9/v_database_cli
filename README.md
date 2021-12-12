@@ -32,7 +32,8 @@ USAGE
 * [`v_db help [COMMAND]`](#v_db-help-command)
 * [`v_db install`](#v_db-install)
 * [`v_db status`](#v_db-status)
-* [`v_db type`](#v_db-type)
+* [`v_db type_new`](#v_db-type_new)
+* [`v_db type_view`](#v_db-type_view)
 
 ## `v_db hello`
 
@@ -111,21 +112,39 @@ DESCRIPTION
 
 _See code: [src/commands/status.js](https://github.com/V-core9/v_database_cli/blob/v0.0.0/src/commands/status.js)_
 
-## `v_db type`
+## `v_db type_new`
 
 Describe the command here
 
 ```
 USAGE
-  $ v_db type
+  $ v_db type_new
 
 OPTIONS
-  -v, --view=view  id to print / view
+  -n, --name=name  type name to create
 
 DESCRIPTION
   ...
   Extra documentation goes here
 ```
 
-_See code: [src/commands/type.js](https://github.com/V-core9/v_database_cli/blob/v0.0.0/src/commands/type.js)_
+_See code: [src/commands/type_new.js](https://github.com/V-core9/v_database_cli/blob/v0.0.0/src/commands/type_new.js)_
+
+## `v_db type_view`
+
+Describe the command here
+
+```
+USAGE
+  $ v_db type_view
+
+OPTIONS
+  -i, --id=id  type to list
+
+DESCRIPTION
+  ...
+  Extra documentation goes here
+```
+
+_See code: [src/commands/type_view.js](https://github.com/V-core9/v_database_cli/blob/v0.0.0/src/commands/type_view.js)_
 <!-- commandsstop -->
