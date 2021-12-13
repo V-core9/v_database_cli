@@ -31,7 +31,11 @@ USAGE
 * [`v_db hello`](#v_db-hello)
 * [`v_db help [COMMAND]`](#v_db-help-command)
 * [`v_db install`](#v_db-install)
+* [`v_db item_del`](#v_db-item_del)
+* [`v_db item_new`](#v_db-item_new)
+* [`v_db item_view`](#v_db-item_view)
 * [`v_db status`](#v_db-status)
+* [`v_db type_del`](#v_db-type_del)
 * [`v_db type_new`](#v_db-type_new)
 * [`v_db type_view`](#v_db-type_view)
 
@@ -88,6 +92,60 @@ DESCRIPTION
 
 _See code: [src/commands/install.js](https://github.com/V-core9/v_database_cli/blob/v0.0.0/src/commands/install.js)_
 
+## `v_db item_del`
+
+Describe the command here
+
+```
+USAGE
+  $ v_db item_del
+
+OPTIONS
+  -n, --name=name  name to print
+
+DESCRIPTION
+  ...
+  Extra documentation goes here
+```
+
+_See code: [src/commands/item_del.js](https://github.com/V-core9/v_database_cli/blob/v0.0.0/src/commands/item_del.js)_
+
+## `v_db item_new`
+
+Describe the command here
+
+```
+USAGE
+  $ v_db item_new
+
+OPTIONS
+  -n, --name=name  name to print
+
+DESCRIPTION
+  ...
+  Extra documentation goes here
+```
+
+_See code: [src/commands/item_new.js](https://github.com/V-core9/v_database_cli/blob/v0.0.0/src/commands/item_new.js)_
+
+## `v_db item_view`
+
+Describe the command here
+
+```
+USAGE
+  $ v_db item_view
+
+OPTIONS
+  -n, --name=name  name to print
+
+DESCRIPTION
+  ...
+  Extra documentation goes here
+```
+
+_See code: [src/commands/item_view.js](https://github.com/V-core9/v_database_cli/blob/v0.0.0/src/commands/item_view.js)_
+
 ## `v_db status`
 
 Check the status of CLI tool and system.
@@ -111,6 +169,24 @@ DESCRIPTION
 ```
 
 _See code: [src/commands/status.js](https://github.com/V-core9/v_database_cli/blob/v0.0.0/src/commands/status.js)_
+
+## `v_db type_del`
+
+Describe the command here
+
+```
+USAGE
+  $ v_db type_del
+
+OPTIONS
+  -n, --name=name  name to print
+
+DESCRIPTION
+  ...
+  Extra documentation goes here
+```
+
+_See code: [src/commands/type_del.js](https://github.com/V-core9/v_database_cli/blob/v0.0.0/src/commands/type_del.js)_
 
 ## `v_db type_new`
 
@@ -139,7 +215,7 @@ USAGE
   $ v_db type_view
 
 OPTIONS
-  -i, --id=id  type to list
+  -t, --type=type  type to list
 
 DESCRIPTION
   ...
