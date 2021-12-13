@@ -19,7 +19,7 @@ $ npm install -g v_database_cli
 $ v_db COMMAND
 running command...
 $ v_db (-v|--version|version)
-v_database_cli/0.0.2 win32-x64 node-v16.13.0
+v_database_cli/0.0.3 win32-x64 node-v16.13.0
 $ v_db --help [COMMAND]
 USAGE
   $ v_db COMMAND
@@ -54,7 +54,7 @@ DESCRIPTION
   Flag -i to delete an item of a type
 ```
 
-_See code: [src/commands/delete.js](https://github.com/V-core9/v_database_cli/blob/v0.0.2/src/commands/delete.js)_
+_See code: [src/commands/delete.js](https://github.com/V-core9/v_database_cli/blob/v0.0.3/src/commands/delete.js)_
 
 ## `v_db hello`
 
@@ -74,7 +74,7 @@ DESCRIPTION
   Welcome hope you find this useful.
 ```
 
-_See code: [src/commands/hello.js](https://github.com/V-core9/v_database_cli/blob/v0.0.2/src/commands/hello.js)_
+_See code: [src/commands/hello.js](https://github.com/V-core9/v_database_cli/blob/v0.0.3/src/commands/hello.js)_
 
 ## `v_db help [COMMAND]`
 
@@ -109,7 +109,7 @@ DESCRIPTION
   Sets up the database dir and config file.
 ```
 
-_See code: [src/commands/install.js](https://github.com/V-core9/v_database_cli/blob/v0.0.2/src/commands/install.js)_
+_See code: [src/commands/install.js](https://github.com/V-core9/v_database_cli/blob/v0.0.3/src/commands/install.js)_
 
 ## `v_db new`
 
@@ -129,7 +129,7 @@ DESCRIPTION
   Extra documentation goes here
 ```
 
-_See code: [src/commands/new.js](https://github.com/V-core9/v_database_cli/blob/v0.0.2/src/commands/new.js)_
+_See code: [src/commands/new.js](https://github.com/V-core9/v_database_cli/blob/v0.0.3/src/commands/new.js)_
 
 ## `v_db status`
 
@@ -153,7 +153,7 @@ DESCRIPTION
     v9 cli_status -c='cfg_dir cfg_file'
 ```
 
-_See code: [src/commands/status.js](https://github.com/V-core9/v_database_cli/blob/v0.0.2/src/commands/status.js)_
+_See code: [src/commands/status.js](https://github.com/V-core9/v_database_cli/blob/v0.0.3/src/commands/status.js)_
 
 ## `v_db view`
 
@@ -172,5 +172,5 @@ DESCRIPTION
   Will list all types when triggered without specifying type or id[with type].
 ```
 
-_See code: [src/commands/view.js](https://github.com/V-core9/v_database_cli/blob/v0.0.2/src/commands/view.js)_
+_See code: [src/commands/view.js](https://github.com/V-core9/v_database_cli/blob/v0.0.3/src/commands/view.js)_
 <!-- commandsstop -->
