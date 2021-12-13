@@ -33,6 +33,7 @@ USAGE
 * [`v_db install`](#v_db-install)
 * [`v_db item_del`](#v_db-item_del)
 * [`v_db item_new`](#v_db-item_new)
+* [`v_db new`](#v_db-new)
 * [`v_db status`](#v_db-status)
 * [`v_db type_del`](#v_db-type_del)
 * [`v_db type_new`](#v_db-type_new)
@@ -129,6 +130,26 @@ DESCRIPTION
 ```
 
 _See code: [src/commands/item_new.js](https://github.com/V-core9/v_database_cli/blob/v0.0.2/src/commands/item_new.js)_
+
+## `v_db new`
+
+Describe the command here
+
+```
+USAGE
+  $ v_db new
+
+OPTIONS
+  -c, --content=content  Content to add to item.
+  -i, --id=id            id to view
+  -t, --type=type        type to view
+
+DESCRIPTION
+  ...
+  Extra documentation goes here
+```
+
+_See code: [src/commands/new.js](https://github.com/V-core9/v_database_cli/blob/v0.0.2/src/commands/new.js)_
 
 ## `v_db status`
 

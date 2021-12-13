@@ -7,6 +7,7 @@ class ViewCommand extends Command {
     const { flags } = this.parse(ViewCommand);
     const type = flags.type || null;
     const id = flags.id || null;
+    console.log(flags);
 
     var resp = false;
     if (type === null) {
