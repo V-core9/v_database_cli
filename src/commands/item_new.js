@@ -19,9 +19,9 @@ class ItemNewCommand extends Command {
   }
 }
 
-ItemNewCommand.description = `Describe the command here
+ItemNewCommand.description = `Creates a new item in a type
 ...
-Extra documentation goes here
+Use id is optional for faster lookup.
 `;
 
 ItemNewCommand.flags = {
