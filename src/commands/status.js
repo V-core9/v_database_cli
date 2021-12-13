@@ -1,6 +1,6 @@
 const { Command, flags } = require('@oclif/command');
 
-const { checkConfigDir, checkConfigFile } = require('../helpers');
+const v_database = require('v_database');
 
 
 
@@ -22,20 +22,20 @@ class StatusCommand extends Command {
 
       // Check for config dir
       if (check_array.indexOf('cfg_dir') > -1) {
-        checkConfigDir();
+        v_database.check_config_dir();
       }
 
       // Check for the root config file
       if (check_array.indexOf('cfg_file') > -1) {
-        checkConfigFile();
+        v_database.check_config_file();
       }
 
     }
 
     // Trigger all check if null
     if (checklist === null) {
-      await checkConfigDir();
-      await checkConfigFile();
+      await v_database.check_config_dir();
+      await v_database.check_config_file();
     }
 
 

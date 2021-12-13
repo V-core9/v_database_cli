@@ -107,7 +107,7 @@ DESCRIPTION
     -c, --checklist  >>  [ "cfg_dir", "cfg_file" ]
 
   Example:
-    v9 cli_status -c='cfg_dir cfg_file '
+    v9 cli_status -c='cfg_dir cfg_file'
 ```
 
 _See code: [src/commands/status.js](https://github.com/V-core9/v_database_cli/blob/v0.0.0/src/commands/status.js)_

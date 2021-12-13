@@ -1,14 +1,18 @@
-const {Command, flags} = require('@oclif/command');
+const { Command, flags } = require('@oclif/command');
 
 const v_db = require('v_database');
 
 class TypeViewCommand extends Command {
   async run() {
-    const {flags} = this.parse(TypeViewCommand);
-    const id = flags.id || 'world';
-    //this.log(`hello ${id} from C:\\Users\\v__V_\\V-core9\\v_database_cli\\src\\commands\\type_view.js`);
+    const { flags } = this.parse(TypeViewCommand);
+    const type = flags.type || null;
 
-    console.log(await v_db.type.view());
+    if (type === null) {
+      console.log(await v_db.type.view());
+    } else {
+      console.log(await v_db.type.view(type));
+    }
+    return true;
   }
 }
 
@@ -18,7 +22,7 @@ Extra documentation goes here
 `;
 
 TypeViewCommand.flags = {
-  id: flags.string({char: 'i', description: 'type to list'}),
+  type: flags.string({ char: 't', description: 'type to list' }),
 };
 
 module.exports = TypeViewCommand;
