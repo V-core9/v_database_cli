@@ -11,10 +11,9 @@ class ItemNewCommand extends Command {
 
     this.log(`NEW ITEM_____\nT: ${type} \nI: ${id} \nC: ${content}`);
 
-    var data = content;
-    if (id !== null) data.id = id;
+    if (content === null) return false;
 
-    const resp = await v_db.item.new(type, data);
+    const resp = await v_db.item.new(type, content, id);
     console.log(resp);
     return resp;
   }
