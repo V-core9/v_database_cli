@@ -28,16 +28,32 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
+* [`v_db delete`](#v_db-delete)
 * [`v_db hello`](#v_db-hello)
 * [`v_db help [COMMAND]`](#v_db-help-command)
 * [`v_db install`](#v_db-install)
-* [`v_db item_del`](#v_db-item_del)
-* [`v_db item_new`](#v_db-item_new)
 * [`v_db new`](#v_db-new)
 * [`v_db status`](#v_db-status)
-* [`v_db type_del`](#v_db-type_del)
-* [`v_db type_new`](#v_db-type_new)
 * [`v_db view`](#v_db-view)
+
+## `v_db delete`
+
+Describe the command here
+
+```
+USAGE
+  $ v_db delete
+
+OPTIONS
+  -i, --id=id      Item id to use [optional]
+  -t, --type=type  Type Name to [create/use]
+
+DESCRIPTION
+  ...
+  Extra documentation goes here
+```
+
+_See code: [src/commands/delete.js](https://github.com/V-core9/v_database_cli/blob/v0.0.2/src/commands/delete.js)_
 
 ## `v_db hello`
 
@@ -92,45 +108,6 @@ DESCRIPTION
 
 _See code: [src/commands/install.js](https://github.com/V-core9/v_database_cli/blob/v0.0.2/src/commands/install.js)_
 
-## `v_db item_del`
-
-Creates a new item in a type
-
-```
-USAGE
-  $ v_db item_del
-
-OPTIONS
-  -i, --id=id      If you want a specific id.
-  -t, --type=type  Type to add to.
-
-DESCRIPTION
-  ...
-  Use id is optional for faster lookup.
-```
-
-_See code: [src/commands/item_del.js](https://github.com/V-core9/v_database_cli/blob/v0.0.2/src/commands/item_del.js)_
-
-## `v_db item_new`
-
-Creates a new item in a type
-
-```
-USAGE
-  $ v_db item_new
-
-OPTIONS
-  -c, --content=content  Content to add to item.
-  -i, --id=id            If you want a specific id.
-  -t, --type=type        Type to add to.
-
-DESCRIPTION
-  ...
-  Use id is optional for faster lookup.
-```
-
-_See code: [src/commands/item_new.js](https://github.com/V-core9/v_database_cli/blob/v0.0.2/src/commands/item_new.js)_
-
 ## `v_db new`
 
 Describe the command here
@@ -140,9 +117,9 @@ USAGE
   $ v_db new
 
 OPTIONS
-  -c, --content=content  Content to add to item.
-  -i, --id=id            id to view
-  -t, --type=type        type to view
+  -c, --content=content  Content to use if adding item to type.
+  -i, --id=id            Item id to use [optional]
+  -t, --type=type        Type Name to [create/use]
 
 DESCRIPTION
   ...
@@ -174,42 +151,6 @@ DESCRIPTION
 ```
 
 _See code: [src/commands/status.js](https://github.com/V-core9/v_database_cli/blob/v0.0.2/src/commands/status.js)_
-
-## `v_db type_del`
-
-Describe the command here
-
-```
-USAGE
-  $ v_db type_del
-
-OPTIONS
-  -n, --name=name  name to print
-
-DESCRIPTION
-  ...
-  Extra documentation goes here
-```
-
-_See code: [src/commands/type_del.js](https://github.com/V-core9/v_database_cli/blob/v0.0.2/src/commands/type_del.js)_
-
-## `v_db type_new`
-
-Describe the command here
-
-```
-USAGE
-  $ v_db type_new
-
-OPTIONS
-  -n, --name=name  type name to create
-
-DESCRIPTION
-  ...
-  Extra documentation goes here
-```
-
-_See code: [src/commands/type_new.js](https://github.com/V-core9/v_database_cli/blob/v0.0.2/src/commands/type_new.js)_
 
 ## `v_db view`
 
