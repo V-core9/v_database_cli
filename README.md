@@ -33,11 +33,10 @@ USAGE
 * [`v_db install`](#v_db-install)
 * [`v_db item_del`](#v_db-item_del)
 * [`v_db item_new`](#v_db-item_new)
-* [`v_db item_view`](#v_db-item_view)
 * [`v_db status`](#v_db-status)
 * [`v_db type_del`](#v_db-type_del)
 * [`v_db type_new`](#v_db-type_new)
-* [`v_db type_view`](#v_db-type_view)
+* [`v_db view`](#v_db-view)
 
 ## `v_db hello`
 
@@ -131,25 +130,6 @@ DESCRIPTION
 
 _See code: [src/commands/item_new.js](https://github.com/V-core9/v_database_cli/blob/v0.0.2/src/commands/item_new.js)_
 
-## `v_db item_view`
-
-Describe the command here
-
-```
-USAGE
-  $ v_db item_view
-
-OPTIONS
-  -i, --id=id      id to view
-  -t, --type=type  type to view
-
-DESCRIPTION
-  ...
-  Extra documentation goes here
-```
-
-_See code: [src/commands/item_view.js](https://github.com/V-core9/v_database_cli/blob/v0.0.2/src/commands/item_view.js)_
-
 ## `v_db status`
 
 Check the status of CLI tool and system.
@@ -210,21 +190,22 @@ DESCRIPTION
 
 _See code: [src/commands/type_new.js](https://github.com/V-core9/v_database_cli/blob/v0.0.2/src/commands/type_new.js)_
 
-## `v_db type_view`
+## `v_db view`
 
 Describe the command here
 
 ```
 USAGE
-  $ v_db type_view
+  $ v_db view
 
 OPTIONS
-  -t, --type=type  type to list
+  -i, --id=id      id to view
+  -t, --type=type  type to view
 
 DESCRIPTION
   ...
   Extra documentation goes here
 ```
 
-_See code: [src/commands/type_view.js](https://github.com/V-core9/v_database_cli/blob/v0.0.2/src/commands/type_view.js)_
+_See code: [src/commands/view.js](https://github.com/V-core9/v_database_cli/blob/v0.0.2/src/commands/view.js)_
 <!-- commandsstop -->
