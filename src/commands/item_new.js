@@ -14,7 +14,7 @@ class ItemNewCommand extends Command {
     if (content === null) return false;
 
     const resp = await v_db.item.new(type, content, id);
-    console.log(resp);
+    console.log( ( resp === true ) ? 'SUCCESS' : 'FAILED' );
     return resp;
   }
 }
