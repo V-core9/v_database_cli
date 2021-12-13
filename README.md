@@ -101,7 +101,8 @@ USAGE
   $ v_db item_del
 
 OPTIONS
-  -n, --name=name  name to print
+  -i, --id=id      id to view
+  -t, --type=type  type to view
 
 DESCRIPTION
   ...
@@ -119,7 +120,9 @@ USAGE
   $ v_db item_new
 
 OPTIONS
-  -n, --name=name  name to print
+  -c, --content=content  Content to add to item.
+  -i, --id=id            If you want a specific id.
+  -t, --type=type        Type to add to.
 
 DESCRIPTION
   ...
@@ -137,7 +140,8 @@ USAGE
   $ v_db item_view
 
 OPTIONS
-  -n, --name=name  name to print
+  -i, --id=id      id to view
+  -t, --type=type  type to view
 
 DESCRIPTION
   ...
