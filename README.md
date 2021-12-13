@@ -38,7 +38,7 @@ USAGE
 
 ## `v_db delete`
 
-Describe the command here
+Delete a type or an item
 
 ```
 USAGE
@@ -50,7 +50,8 @@ OPTIONS
 
 DESCRIPTION
   ...
-  Extra documentation goes here
+  Flag -t to delete a type
+  Flag -i to delete an item of a type
 ```
 
 _See code: [src/commands/delete.js](https://github.com/V-core9/v_database_cli/blob/v0.0.2/src/commands/delete.js)_
@@ -156,7 +157,7 @@ _See code: [src/commands/status.js](https://github.com/V-core9/v_database_cli/bl
 
 ## `v_db view`
 
-Describe the command here
+View a type list, list of items in a type or specific item
 
 ```
 USAGE
@@ -168,7 +169,7 @@ OPTIONS
 
 DESCRIPTION
   ...
-  Extra documentation goes here
+  Will list all types when triggered without specifying type or id[with type].
 ```
 
 _See code: [src/commands/view.js](https://github.com/V-core9/v_database_cli/blob/v0.0.2/src/commands/view.js)_

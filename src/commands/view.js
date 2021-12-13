@@ -25,9 +25,9 @@ class ViewCommand extends Command {
   }
 }
 
-ViewCommand.description = `Describe the command here
+ViewCommand.description = `View a type list, list of items in a type or specific item
 ...
-Extra documentation goes here
+Will list all types when triggered without specifying type or id[with type].
 `;
 
 ViewCommand.flags = {
