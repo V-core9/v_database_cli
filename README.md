@@ -57,7 +57,7 @@ _See code: [src/commands/delete.js](https://github.com/V-core9/v_database_cli/bl
 
 ## `v_db hello`
 
-Describe the command here
+Basic example command here
 
 ```
 USAGE
@@ -69,6 +69,8 @@ OPTIONS
 DESCRIPTION
   ...
   Extra documentation goes here
+
+  Welcome hope you find this useful.
 ```
 
 _See code: [src/commands/hello.js](https://github.com/V-core9/v_database_cli/blob/v0.0.2/src/commands/hello.js)_
@@ -92,7 +94,7 @@ _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v3.2.1
 
 ## `v_db install`
 
-Describe the command here
+Trigger v_database.install() process
 
 ```
 USAGE
@@ -103,7 +105,7 @@ OPTIONS
 
 DESCRIPTION
   ...
-  Extra documentation goes here
+  Sets up the database dir and config file.
 ```
 
 _See code: [src/commands/install.js](https://github.com/V-core9/v_database_cli/blob/v0.0.2/src/commands/install.js)_

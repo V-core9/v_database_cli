@@ -1,20 +1,22 @@
-const {Command, flags} = require('@oclif/command')
+const {Command, flags} = require('@oclif/command');
 
 class HelloCommand extends Command {
   async run() {
-    const {flags} = this.parse(HelloCommand)
-    const name = flags.name || 'world'
-    this.log(`hello ${name} from .\\src\\commands\\hello.js`)
+    const {flags} = this.parse(HelloCommand);
+    const name = flags.name || 'world';
+    this.log(`hello ${name} from .\\src\\commands\\hello.js`);
   }
 }
 
-HelloCommand.description = `Describe the command here
+HelloCommand.description = `Basic example command here
 ...
 Extra documentation goes here
-`
+
+Welcome hope you find this useful.
+`;
 
 HelloCommand.flags = {
   name: flags.string({char: 'n', description: 'name to print'}),
-}
+};
 
-module.exports = HelloCommand
+module.exports = HelloCommand;

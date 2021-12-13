@@ -26,9 +26,10 @@ class DeleteCommand extends Command {
   }
 }
 
-DeleteCommand.description = `Describe the command here
+DeleteCommand.description = `Delete a type or an item
 ...
-Extra documentation goes here
+Flag -t to delete a type
+Flag -i to delete an item of a type
 `;
 
 DeleteCommand.flags = {

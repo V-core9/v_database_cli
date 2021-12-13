@@ -12,9 +12,9 @@ class InstallCommand extends Command {
   }
 }
 
-InstallCommand.description = `Describe the command here
+InstallCommand.description = `Trigger v_database.install() process
 ...
-Extra documentation goes here
+Sets up the database dir and config file.
 `;
 
 InstallCommand.flags = {
