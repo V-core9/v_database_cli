@@ -2,9 +2,9 @@ const { Command, flags } = require('@oclif/command');
 
 const v_db = require('v_database');
 
-class TypeViewCommand extends Command {
+class ItemViewCommand extends Command {
   async run() {
-    const { flags } = this.parse(TypeViewCommand);
+    const { flags } = this.parse(ItemViewCommand);
     const type = flags.type || null;
     const id = flags.id || null;
 
@@ -19,14 +19,14 @@ class TypeViewCommand extends Command {
   }
 }
 
-TypeViewCommand.description = `Describe the command here
+ItemViewCommand.description = `Describe the command here
 ...
 Extra documentation goes here
 `;
 
-TypeViewCommand.flags = {
+ItemViewCommand.flags = {
   type: flags.string({ char: 't', description: 'type to view' }),
   id: flags.string({ char: 'i', description: 'id to view' }),
 };
 
-module.exports = TypeViewCommand;
+module.exports = ItemViewCommand;

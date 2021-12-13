@@ -1,28 +1,28 @@
-const { Command, flags } = require('@oclif/command');
+const {Command, flags} = require('@oclif/command');
 
 const v_db = require('v_database');
-
-class TypeViewCommand extends Command {
+class ItemDelCommand extends Command {
   async run() {
-    const { flags } = this.parse(TypeViewCommand);
+    const {flags} = this.parse(ItemDelCommand);
     const type = flags.type || null;
     const id = flags.id || null;
 
-    if (type === null || id === null) return false;
+    if (id === null || type === null) return false;
+
     const resp = await v_db.item.del(type, id);
-    console.log(resp);
+    console.log( ( resp === true ) ? 'SUCCESS' : 'FAILED' );
     return resp;
   }
 }
 
-TypeViewCommand.description = `Describe the command here
+ItemDelCommand.description = `Creates a new item in a type
 ...
-Extra documentation goes here
+Use id is optional for faster lookup.
 `;
 
-TypeViewCommand.flags = {
-  type: flags.string({ char: 't', description: 'type to view' }),
-  id: flags.string({ char: 'i', description: 'id to view' }),
+ItemDelCommand.flags = {
+  type: flags.string({char: 't', description: 'Type to add to.'}),
+  id: flags.string({char: 'i', description: 'If you want a specific id.'}),
 };
 
-module.exports = TypeViewCommand;
+module.exports = ItemDelCommand;
