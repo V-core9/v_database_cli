@@ -1,20 +1,32 @@
-const {Command, flags} = require('@oclif/command')
+const { Command, flags } = require('@oclif/command');
 
-class ItemViewCommand extends Command {
+const v_db = require('v_database');
+
+class TypeViewCommand extends Command {
   async run() {
-    const {flags} = this.parse(ItemViewCommand)
-    const name = flags.name || 'world'
-    this.log(`hello ${name} from C:\\Users\\v__V_\\V-core9\\v_database_cli\\src\\commands\\item_view.js`)
+    const { flags } = this.parse(TypeViewCommand);
+    const type = flags.type || null;
+    const id = flags.id || null;
+
+    if (type === null) return false;
+
+    if (id === null) {
+      console.log(await v_db.item.view(type));
+    } else {
+      console.log(await v_db.item.view(type, id));
+    }
+    return true;
   }
 }
 
-ItemViewCommand.description = `Describe the command here
+TypeViewCommand.description = `Describe the command here
 ...
 Extra documentation goes here
-`
+`;
 
-ItemViewCommand.flags = {
-  name: flags.string({char: 'n', description: 'name to print'}),
-}
+TypeViewCommand.flags = {
+  type: flags.string({ char: 't', description: 'type to view' }),
+  id: flags.string({ char: 'i', description: 'id to view' }),
+};
 
-module.exports = ItemViewCommand
+module.exports = TypeViewCommand;

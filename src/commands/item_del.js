@@ -1,20 +1,28 @@
-const {Command, flags} = require('@oclif/command')
+const { Command, flags } = require('@oclif/command');
 
-class ItemDelCommand extends Command {
+const v_db = require('v_database');
+
+class TypeViewCommand extends Command {
   async run() {
-    const {flags} = this.parse(ItemDelCommand)
-    const name = flags.name || 'world'
-    this.log(`hello ${name} from C:\\Users\\v__V_\\V-core9\\v_database_cli\\src\\commands\\item_del.js`)
+    const { flags } = this.parse(TypeViewCommand);
+    const type = flags.type || null;
+    const id = flags.id || null;
+
+    if (type === null || id === null) return false;
+    const resp = await v_db.item.del(type, id);
+    console.log(resp);
+    return resp;
   }
 }
 
-ItemDelCommand.description = `Describe the command here
+TypeViewCommand.description = `Describe the command here
 ...
 Extra documentation goes here
-`
+`;
 
-ItemDelCommand.flags = {
-  name: flags.string({char: 'n', description: 'name to print'}),
-}
+TypeViewCommand.flags = {
+  type: flags.string({ char: 't', description: 'type to view' }),
+  id: flags.string({ char: 'i', description: 'id to view' }),
+};
 
-module.exports = ItemDelCommand
+module.exports = TypeViewCommand;
