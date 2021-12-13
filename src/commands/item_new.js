@@ -1,5 +1,6 @@
 const {Command, flags} = require('@oclif/command');
 
+const v_db = require('v_database');
 class ItemNewCommand extends Command {
   async run() {
     const {flags} = this.parse(ItemNewCommand);
@@ -10,6 +11,12 @@ class ItemNewCommand extends Command {
 
     this.log(`NEW ITEM_____\nT: ${type} \nI: ${id} \nC: ${content}`);
 
+    var data = content;
+    if (id !== null) data.id = id;
+
+    const resp = await v_db.item.new(type, data);
+    console.log(resp);
+    return resp;
   }
 }
 

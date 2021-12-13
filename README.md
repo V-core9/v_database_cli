@@ -19,7 +19,7 @@ $ npm install -g v_database_cli
 $ v_db COMMAND
 running command...
 $ v_db (-v|--version|version)
-v_database_cli/0.0.0 win32-x64 node-v16.13.0
+v_database_cli/0.0.1 win32-x64 node-v16.13.0
 $ v_db --help [COMMAND]
 USAGE
   $ v_db COMMAND
@@ -55,7 +55,7 @@ DESCRIPTION
   Extra documentation goes here
 ```
 
-_See code: [src/commands/hello.js](https://github.com/V-core9/v_database_cli/blob/v0.0.0/src/commands/hello.js)_
+_See code: [src/commands/hello.js](https://github.com/V-core9/v_database_cli/blob/v0.0.1/src/commands/hello.js)_
 
 ## `v_db help [COMMAND]`
 
@@ -90,7 +90,7 @@ DESCRIPTION
   Extra documentation goes here
 ```
 
-_See code: [src/commands/install.js](https://github.com/V-core9/v_database_cli/blob/v0.0.0/src/commands/install.js)_
+_See code: [src/commands/install.js](https://github.com/V-core9/v_database_cli/blob/v0.0.1/src/commands/install.js)_
 
 ## `v_db item_del`
 
@@ -109,7 +109,7 @@ DESCRIPTION
   Extra documentation goes here
 ```
 
-_See code: [src/commands/item_del.js](https://github.com/V-core9/v_database_cli/blob/v0.0.0/src/commands/item_del.js)_
+_See code: [src/commands/item_del.js](https://github.com/V-core9/v_database_cli/blob/v0.0.1/src/commands/item_del.js)_
 
 ## `v_db item_new`
 
@@ -129,7 +129,7 @@ DESCRIPTION
   Extra documentation goes here
 ```
 
-_See code: [src/commands/item_new.js](https://github.com/V-core9/v_database_cli/blob/v0.0.0/src/commands/item_new.js)_
+_See code: [src/commands/item_new.js](https://github.com/V-core9/v_database_cli/blob/v0.0.1/src/commands/item_new.js)_
 
 ## `v_db item_view`
 
@@ -148,7 +148,7 @@ DESCRIPTION
   Extra documentation goes here
 ```
 
-_See code: [src/commands/item_view.js](https://github.com/V-core9/v_database_cli/blob/v0.0.0/src/commands/item_view.js)_
+_See code: [src/commands/item_view.js](https://github.com/V-core9/v_database_cli/blob/v0.0.1/src/commands/item_view.js)_
 
 ## `v_db status`
 
@@ -172,7 +172,7 @@ DESCRIPTION
     v9 cli_status -c='cfg_dir cfg_file'
 ```
 
-_See code: [src/commands/status.js](https://github.com/V-core9/v_database_cli/blob/v0.0.0/src/commands/status.js)_
+_See code: [src/commands/status.js](https://github.com/V-core9/v_database_cli/blob/v0.0.1/src/commands/status.js)_
 
 ## `v_db type_del`
 
@@ -190,7 +190,7 @@ DESCRIPTION
   Extra documentation goes here
 ```
 
-_See code: [src/commands/type_del.js](https://github.com/V-core9/v_database_cli/blob/v0.0.0/src/commands/type_del.js)_
+_See code: [src/commands/type_del.js](https://github.com/V-core9/v_database_cli/blob/v0.0.1/src/commands/type_del.js)_
 
 ## `v_db type_new`
 
@@ -208,7 +208,7 @@ DESCRIPTION
   Extra documentation goes here
 ```
 
-_See code: [src/commands/type_new.js](https://github.com/V-core9/v_database_cli/blob/v0.0.0/src/commands/type_new.js)_
+_See code: [src/commands/type_new.js](https://github.com/V-core9/v_database_cli/blob/v0.0.1/src/commands/type_new.js)_
 
 ## `v_db type_view`
 
@@ -226,5 +226,5 @@ DESCRIPTION
   Extra documentation goes here
 ```
 
-_See code: [src/commands/type_view.js](https://github.com/V-core9/v_database_cli/blob/v0.0.0/src/commands/type_view.js)_
+_See code: [src/commands/type_view.js](https://github.com/V-core9/v_database_cli/blob/v0.0.1/src/commands/type_view.js)_
 <!-- commandsstop -->
