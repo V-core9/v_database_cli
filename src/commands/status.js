@@ -1,10 +1,8 @@
 const { Command, flags } = require('@oclif/command');
 
-const v_database = require('v_database');
 
-
-
-
+const v_db = require("v_database");
+v_db.init();
 
 
 class StatusCommand extends Command {
@@ -12,7 +10,7 @@ class StatusCommand extends Command {
     const { flags } = this.parse(StatusCommand);
     const checklist = flags.checklist || null;
 
-    console.log(`\n🩺 V_Database_CLI >> System Status Check [ --checklist == '${checklist === null ? 'ALL' : checklist}' ]\n`);
+    console.log(`\n🩺 v_db_CLI >> System Status Check [ --checklist == '${checklist === null ? 'ALL' : checklist}' ]\n`);
 
     var check_array = null;
 
@@ -22,20 +20,20 @@ class StatusCommand extends Command {
 
       // Check for config dir
       if (check_array.indexOf('cfg_dir') > -1) {
-        console.log(await v_database.check_config_dir());
+        console.log(await v_db.check_config_dir());
       }
 
       // Check for the root config file
       if (check_array.indexOf('cfg_file') > -1) {
-        console.log(await v_database.check_config_file());
+        console.log(await v_db.check_config_file());
       }
 
     }
 
     // Trigger all check if null
     if (checklist === null) {
-      console.log(await v_database.check_config_dir());
-      console.log(await v_database.check_config_file());
+      console.log(await v_db.check_config_dir());
+      console.log(await v_db.check_config_file());
     }
 
 
