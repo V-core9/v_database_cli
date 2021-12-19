@@ -1,9 +1,5 @@
 const { Command, flags } = require('@oclif/command');
-
-
 const v_db = require("v_database");
-v_db.init();
-
 
 class StatusCommand extends Command {
   async run() {

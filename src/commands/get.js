@@ -2,9 +2,9 @@ const { Command, flags } = require('@oclif/command');
 
 const v_db = require('v_database');
 
-class ViewCommand extends Command {
+class GetCommand extends Command {
   async run() {
-    const { flags } = this.parse(ViewCommand);
+    const { flags } = this.parse(GetCommand);
     const type = flags.type || null;
     const id = flags.id || null;
     console.log(flags);
@@ -25,14 +25,14 @@ class ViewCommand extends Command {
   }
 }
 
-ViewCommand.description = `View a type list, list of items in a type or specific item
+GetCommand.description = `View a type list, list of items in a type or specific item
 ...
 Will list all types when triggered without specifying type or id[with type].
 `;
 
-ViewCommand.flags = {
+GetCommand.flags = {
   type: flags.string({ char: 't', description: 'type to view' }),
   id: flags.string({ char: 'i', description: 'id to view' }),
 };
 
-module.exports = ViewCommand;
+module.exports = GetCommand;

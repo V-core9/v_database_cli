@@ -2,9 +2,9 @@ const { Command, flags } = require('@oclif/command');
 
 const v_db = require('v_database');
 
-class NewCommand extends Command {
+class MkCommand extends Command {
   async run() {
-    const { flags } = this.parse(NewCommand);
+    const { flags } = this.parse(MkCommand);
     const type = flags.type || null;
     const id = flags.id || null;
     const content = flags.content || null;
@@ -31,15 +31,15 @@ class NewCommand extends Command {
   }
 }
 
-NewCommand.description = `Describe the command here
+MkCommand.description = `Describe the command here
 ...
 Extra documentation goes here
 `;
 
-NewCommand.flags = {
+MkCommand.flags = {
   type: flags.string({ char: 't', description: 'Type Name to [create/use]' }),
   id: flags.string({ char: 'i', description: 'Item id to use [optional]' }),
   content: flags.string({ char: 'c', description: 'Content to use if adding item to type.' }),
 };
 
-module.exports = NewCommand;
+module.exports = MkCommand;
