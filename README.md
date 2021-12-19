@@ -59,11 +59,10 @@ USAGE
 # Commands
 <!-- commands -->
 * [`v_db get`](#v_db-get)
-* [`v_db hello`](#v_db-hello)
 * [`v_db help [COMMAND]`](#v_db-help-command)
-* [`v_db install`](#v_db-install)
 * [`v_db mk`](#v_db-mk)
 * [`v_db rm`](#v_db-rm)
+* [`v_db setup`](#v_db-setup)
 * [`v_db status`](#v_db-status)
 
 ## `v_db get`
@@ -85,26 +84,6 @@ DESCRIPTION
 
 _See code: [src/commands/get.js](https://github.com/V-core9/v_database_cli/blob/v0.0.4/src/commands/get.js)_
 
-## `v_db hello`
-
-Basic example command here
-
-```
-USAGE
-  $ v_db hello
-
-OPTIONS
-  -n, --name=name  name to print
-
-DESCRIPTION
-  ...
-  Extra documentation goes here
-
-  Welcome hope you find this useful.
-```
-
-_See code: [src/commands/hello.js](https://github.com/V-core9/v_database_cli/blob/v0.0.4/src/commands/hello.js)_
-
 ## `v_db help [COMMAND]`
 
 display help for v_db
@@ -121,24 +100,6 @@ OPTIONS
 ```
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v3.2.17/src/commands/help.ts)_
-
-## `v_db install`
-
-Trigger v_database.install() process
-
-```
-USAGE
-  $ v_db install
-
-OPTIONS
-  -n, --name=name  name to print
-
-DESCRIPTION
-  ...
-  Sets up the database dir and config file.
-```
-
-_See code: [src/commands/install.js](https://github.com/V-core9/v_database_cli/blob/v0.0.4/src/commands/install.js)_
 
 ## `v_db mk`
 
@@ -179,6 +140,24 @@ DESCRIPTION
 ```
 
 _See code: [src/commands/rm.js](https://github.com/V-core9/v_database_cli/blob/v0.0.4/src/commands/rm.js)_
+
+## `v_db setup`
+
+Trigger v_database.install() process
+
+```
+USAGE
+  $ v_db setup
+
+OPTIONS
+  -n, --name=name  name to print
+
+DESCRIPTION
+  ...
+  Sets up the database dir and config file.
+```
+
+_See code: [src/commands/setup.js](https://github.com/V-core9/v_database_cli/blob/v0.0.4/src/commands/setup.js)_
 
 ## `v_db status`
 
