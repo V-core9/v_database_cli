@@ -25,7 +25,7 @@ class GetCommand extends Command {
   }
 }
 
-GetCommand.description = `View a type list, list of items in a type or specific item
+GetCommand.description = `View a type[s]/item[s]
 ...
 Will list all types when triggered without specifying type or id[with type].
 `;

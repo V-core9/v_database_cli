@@ -67,7 +67,7 @@ USAGE
 
 ## `v_db get`
 
-View a type list, list of items in a type or specific item
+View a type[s]/item[s]
 
 ```
 USAGE
@@ -103,7 +103,7 @@ _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v3.2.1
 
 ## `v_db mk`
 
-Describe the command here
+Make new type or item
 
 ```
 USAGE
@@ -143,7 +143,7 @@ _See code: [src/commands/rm.js](https://github.com/V-core9/v_database_cli/blob/v
 
 ## `v_db setup`
 
-Trigger v_database.install() process
+Run installation process
 
 ```
 USAGE
@@ -161,7 +161,7 @@ _See code: [src/commands/setup.js](https://github.com/V-core9/v_database_cli/blo
 
 ## `v_db status`
 
-Check the status of CLI tool and system.
+Trigger system status check
 
 ```
 USAGE

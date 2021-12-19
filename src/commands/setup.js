@@ -12,7 +12,7 @@ class SetupCommand extends Command {
   }
 }
 
-SetupCommand.description = `Trigger v_database.install() process
+SetupCommand.description = `Run installation process
 ...
 Sets up the database dir and config file.
 `;

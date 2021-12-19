@@ -31,7 +31,7 @@ class MkCommand extends Command {
   }
 }
 
-MkCommand.description = `Describe the command here
+MkCommand.description = `Make new type or item
 ...
 Extra documentation goes here
 `;

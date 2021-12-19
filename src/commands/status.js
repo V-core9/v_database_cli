@@ -16,27 +16,27 @@ class StatusCommand extends Command {
 
       // Check for config dir
       if (check_array.indexOf('cfg_dir') > -1) {
-        console.log(await v_db.check_config_dir());
+        console.log('cfg_dir : ' + await v_db.check_config_dir());
       }
 
       // Check for the root config file
       if (check_array.indexOf('cfg_file') > -1) {
-        console.log(await v_db.check_config_file());
+        console.log('cfg_file : ' + await v_db.check_config_file());
       }
 
     }
 
     // Trigger all check if null
     if (checklist === null) {
-      console.log(await v_db.check_config_dir());
-      console.log(await v_db.check_config_file());
+      console.log('cfg_dir : ' + await v_db.check_config_dir());
+      console.log('cfg_file : ' + await v_db.check_config_file());
     }
 
 
   }
 }
 
-StatusCommand.description = `Check the status of CLI tool and system.
+StatusCommand.description = `Trigger system status check
 ...
 Look for into the config directory and config file.
 
