@@ -22,20 +22,20 @@ class StatusCommand extends Command {
 
       // Check for config dir
       if (check_array.indexOf('cfg_dir') > -1) {
-        v_database.check_config_dir();
+        console.log(await v_database.check_config_dir());
       }
 
       // Check for the root config file
       if (check_array.indexOf('cfg_file') > -1) {
-        v_database.check_config_file();
+        console.log(await v_database.check_config_file());
       }
 
     }
 
     // Trigger all check if null
     if (checklist === null) {
-      await v_database.check_config_dir();
-      await v_database.check_config_file();
+      console.log(await v_database.check_config_dir());
+      console.log(await v_database.check_config_file());
     }
 
 
