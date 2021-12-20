@@ -25,7 +25,7 @@ $ npm install -g v_database_cli
 $ v_db COMMAND
 running command...
 $ v_db (-v|--version|version)
-v_database_cli/0.0.4 win32-x64 node-v16.13.0
+v_database_cli/0.0.5 win32-x64 node-v16.13.0
 $ v_db --help [COMMAND]
 USAGE
   $ v_db COMMAND
@@ -58,12 +58,32 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
+* [`v_db data_status`](#v_db-data_status)
 * [`v_db get`](#v_db-get)
 * [`v_db help [COMMAND]`](#v_db-help-command)
 * [`v_db mk`](#v_db-mk)
+* [`v_db purge`](#v_db-purge)
 * [`v_db rm`](#v_db-rm)
 * [`v_db setup`](#v_db-setup)
 * [`v_db status`](#v_db-status)
+
+## `v_db data_status`
+
+Describe the command here
+
+```
+USAGE
+  $ v_db data_status
+
+OPTIONS
+  -n, --name=name  name to print
+
+DESCRIPTION
+  ...
+  Extra documentation goes here
+```
+
+_See code: [src/commands/data_status.js](https://github.com/V-core9/v_database_cli/blob/v0.0.5/src/commands/data_status.js)_
 
 ## `v_db get`
 
@@ -82,7 +102,7 @@ DESCRIPTION
   Will list all types when triggered without specifying type or id[with type].
 ```
 
-_See code: [src/commands/get.js](https://github.com/V-core9/v_database_cli/blob/v0.0.4/src/commands/get.js)_
+_See code: [src/commands/get.js](https://github.com/V-core9/v_database_cli/blob/v0.0.5/src/commands/get.js)_
 
 ## `v_db help [COMMAND]`
 
@@ -119,7 +139,25 @@ DESCRIPTION
   Extra documentation goes here
 ```
 
-_See code: [src/commands/mk.js](https://github.com/V-core9/v_database_cli/blob/v0.0.4/src/commands/mk.js)_
+_See code: [src/commands/mk.js](https://github.com/V-core9/v_database_cli/blob/v0.0.5/src/commands/mk.js)_
+
+## `v_db purge`
+
+Describe the command here
+
+```
+USAGE
+  $ v_db purge
+
+OPTIONS
+  -n, --name=name  name to print
+
+DESCRIPTION
+  ...
+  Extra documentation goes here
+```
+
+_See code: [src/commands/purge.js](https://github.com/V-core9/v_database_cli/blob/v0.0.5/src/commands/purge.js)_
 
 ## `v_db rm`
 
@@ -139,7 +177,7 @@ DESCRIPTION
   Flag -i to delete an item of a type
 ```
 
-_See code: [src/commands/rm.js](https://github.com/V-core9/v_database_cli/blob/v0.0.4/src/commands/rm.js)_
+_See code: [src/commands/rm.js](https://github.com/V-core9/v_database_cli/blob/v0.0.5/src/commands/rm.js)_
 
 ## `v_db setup`
 
@@ -157,7 +195,7 @@ DESCRIPTION
   Sets up the database dir and config file.
 ```
 
-_See code: [src/commands/setup.js](https://github.com/V-core9/v_database_cli/blob/v0.0.4/src/commands/setup.js)_
+_See code: [src/commands/setup.js](https://github.com/V-core9/v_database_cli/blob/v0.0.5/src/commands/setup.js)_
 
 ## `v_db status`
 
@@ -181,7 +219,7 @@ DESCRIPTION
     v9 cli_status -c='cfg_dir cfg_file'
 ```
 
-_See code: [src/commands/status.js](https://github.com/V-core9/v_database_cli/blob/v0.0.4/src/commands/status.js)_
+_See code: [src/commands/status.js](https://github.com/V-core9/v_database_cli/blob/v0.0.5/src/commands/status.js)_
 <!-- commandsstop -->
 * [`v_db delete`](#v_db-delete)
 * [`v_db hello`](#v_db-hello)
