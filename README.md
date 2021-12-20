@@ -58,7 +58,7 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`v_db data_status`](#v_db-data_status)
+* [`v_db data_size`](#v_db-data_size)
 * [`v_db get`](#v_db-get)
 * [`v_db help [COMMAND]`](#v_db-help-command)
 * [`v_db mk`](#v_db-mk)
@@ -67,23 +67,20 @@ USAGE
 * [`v_db setup`](#v_db-setup)
 * [`v_db status`](#v_db-status)
 
-## `v_db data_status`
+## `v_db data_size`
 
 Describe the command here
 
 ```
 USAGE
-  $ v_db data_status
-
-OPTIONS
-  -n, --name=name  name to print
+  $ v_db data_size
 
 DESCRIPTION
   ...
   Extra documentation goes here
 ```
 
-_See code: [src/commands/data_status.js](https://github.com/V-core9/v_database_cli/blob/v0.0.5/src/commands/data_status.js)_
+_See code: [src/commands/data_size.js](https://github.com/V-core9/v_database_cli/blob/v0.0.5/src/commands/data_size.js)_
 
 ## `v_db get`
 
@@ -148,9 +145,6 @@ Describe the command here
 ```
 USAGE
   $ v_db purge
-
-OPTIONS
-  -n, --name=name  name to print
 
 DESCRIPTION
   ...
