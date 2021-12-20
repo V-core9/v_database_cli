@@ -1,7 +1,7 @@
 {
   "name": "v_database_cli",
   "description": "nope",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "author": " @V-core9",
   "bin": {
     "v_db": "./bin/run"
