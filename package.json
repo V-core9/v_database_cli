@@ -1,7 +1,7 @@
 {
   "name": "v_database_cli",
-  "description": "nope",
-  "version": "0.0.6",
+  "description": "V_Database CLI tool for an easy access to data.",
+  "version": "0.0.7",
   "author": " @V-core9",
   "bin": {
     "v_db": "./bin/run"
@@ -13,6 +13,9 @@
     "chai": "^4.3.4",
     "eslint": "^7.32.0",
     "eslint-config-oclif": "^3.1.2",
+    "eslint-plugin-mocha": "^10.0.3",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-unicorn": "^40.0.0",
     "globby": "^10.0.2",
     "mocha": "^5.2.0",
     "nyc": "^14.1.1",
@@ -52,6 +55,6 @@
     "@oclif/command": "^1.8.13",
     "@oclif/config": "^1.18.2",
     "@oclif/plugin-help": "^3.2.17",
-    "v_database": "^0.1.5"
+    "v_database": "^0.1.7"
   }
 }

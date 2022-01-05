@@ -1,5 +1,4 @@
 const { Command, flags } = require('@oclif/command');
-
 const v_db = require('v_database');
 
 class SetupCommand extends Command {
@@ -7,15 +6,15 @@ class SetupCommand extends Command {
     const { flags } = this.parse(SetupCommand);
     const name = flags.name || 'world';
     this.log(`hello ${name} from C:\\Users\\v__V_\\V-core9\\v_database_cli\\src\\commands\\install.js`);
-
-    console.log(await v_db.install());
+    const resp = await v_db.install();
+    console.log(resp);
+    return resp;
   }
 }
 
 SetupCommand.description = `Run installation process
 ...
-Sets up the database dir and config file.
-`;
+Sets up the database dir and config file.`;
 
 SetupCommand.flags = {
   name: flags.string({ char: 'n', description: 'name to print' }),

@@ -12,10 +12,7 @@ class MkCommand extends Command {
 
     var resp = false;
 
-    if (type === null) {
-      console.log('missing type');
-      return false;
-    } else {
+    if (type !== null) {
       if (content === null) {
         resp = await v_db.type.new(type);
       } else {

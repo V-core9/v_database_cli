@@ -7,14 +7,8 @@ class RmCommand extends Command {
     const { flags } = this.parse(RmCommand);
     const type = flags.type || null;
     const id = flags.id || null;
-    console.log(flags);
-
     var resp = false;
-
-    if (type === null) {
-      console.log('missing type');
-      return false;
-    } else {
+    if (type !== null) {
       if (id === null) {
         resp = await v_db.type.del(type);
       } else {
