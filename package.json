@@ -17,7 +17,7 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-unicorn": "^40.0.0",
     "globby": "^10.0.2",
-    "mocha": "^5.2.0",
+    "mocha": "^10.2.0",
     "nyc": "^14.1.1",
     "rimraf": "^3.0.2"
   },
